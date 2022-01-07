@@ -7,6 +7,31 @@
         >Add and use
       </a>
     </aside>
+    <div>
+      <aside>
+        接下来我们就要自己来制作 svg-sprite 了。这里要使用到 svg-sprite-loader
+        这个神器了， 它是一个 webpack loader ，可以将多个 svg 打包成 svg-sprite
+        。
+        <p>
+          <a href="https://juejin.cn/post/6844903517564436493" target="_blank">
+            https://juejin.cn/post/6844903517564436493
+          </a>
+        </p>
+      </aside>
+      <aside>
+        <h3>SVG精简压缩工具svgo简介和初体验</h3>
+        <a
+          href="https://www.zhangxinxu.com/wordpress/2016/02/svg-compress-tool-svgo-experience/"
+          target="_blank"
+          >张鑫旭空间</a
+        >
+      </aside>
+      <aside>
+        <a href="http://www.dreamwu.com/post-1475.html" target="_blank"
+          >http://www.dreamwu.com/post-1475.html</a
+        >
+      </aside>
+    </div>
     <el-tabs type="border-card">
       <el-tab-pane label="Icons">
         <div class="grid">

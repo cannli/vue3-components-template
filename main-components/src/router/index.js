@@ -53,6 +53,18 @@ export const constantRoutes = [
       },
     ],
   },
+  {
+    path: "/tinymce",
+    component: Layout,
+    children: [
+      {
+        path: "index",
+        component: () => import("@/views/tinymce/tinymce"),
+        name: "Icons",
+        meta: { title: "tinymce", icon: "icon", noCache: true },
+      },
+    ],
+  },
 ];
 
 const router = new VueRouter({
