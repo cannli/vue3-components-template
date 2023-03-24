@@ -125,7 +125,7 @@ export default {
       // 支持双向绑定
       this.coder.on('change', (coder) => {
         this.code = coder.getValue()
-
+        console.log(this.code, 44444);
         if (this.$emit) {
           this.$emit('input', this.code)
         }

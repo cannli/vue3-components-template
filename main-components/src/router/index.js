@@ -37,7 +37,7 @@ export const constantRoutes = [
         path: "index",
         component: () => import("@/views/icons/index"),
         name: "Icons",
-        meta: { title: "Icons", icon: "icon", noCache: true },
+        meta: { title: "Icons", icon: "chart", noCache: true },
       },
     ],
   },
@@ -49,7 +49,7 @@ export const constantRoutes = [
         path: "index",
         component: () => import("@/views/codemirror/index"),
         name: "Icons",
-        meta: { title: "codemirror", icon: "icon", noCache: true },
+        meta: { title: "codemirror", icon: "form", noCache: true },
       },
     ],
   },
@@ -62,6 +62,30 @@ export const constantRoutes = [
         component: () => import("@/views/tinymce/tinymce"),
         name: "Icons",
         meta: { title: "tinymce", icon: "icon", noCache: true },
+      },
+    ],
+  },
+  {
+    path: "/pdf",
+    component: Layout,
+    children: [
+      {
+        path: "index",
+        component: () => import("@/views/pdf/index"),
+        name: "Icons",
+        meta: { title: "pdf", icon: "icon", noCache: true },
+      },
+    ],
+  },
+  {
+    path: "/wangeditor",
+    component: Layout,
+    children: [
+      {
+        path: "index",
+        component: () => import("@/views/wangeditor/text-editor"),
+        name: "wangeditor",
+        meta: { title: "wangeditor", icon: "icon", noCache: true },
       },
     ],
   },

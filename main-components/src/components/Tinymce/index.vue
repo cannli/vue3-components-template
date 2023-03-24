@@ -24,10 +24,8 @@ import editorImage from "./components/EditorImage";
 import plugins from "./plugins";
 import toolbar from "./toolbar";
 import load from "./dynamicLoadScript";
-
 // why use this cdn, detail see https://github.com/PanJiaChen/tinymce-all-in-one
-const tinymceCDN =
-  "https://cdn.jsdelivr.net/npm/tinymce-all-in-one@4.9.3/tinymce.min.js";
+const tinymceCDN = "https://cdn.jsdelivr.net/npm/tinymce-all-in-one@4.9.3/tinymce.min.js";
 
 export default {
   name: "Tinymce",
@@ -56,7 +54,7 @@ export default {
     },
     menubar: {
       type: String,
-      default: "file edit insert view format table",
+      default: "file edit insert view format table copy paste undo",
     },
     height: {
       type: [Number, String],
@@ -131,10 +129,12 @@ export default {
       const _this = this;
       window.tinymce.init({
         selector: `#${this.tinymceId}`,
-        language: this.languageTypeList["en"],
+        language: this.languageTypeList["zh"],
         height: this.height,
         body_class: "panel-body ",
         object_resizing: false,
+        content_css: '/myContent.scss',
+        statusbar: false,
         toolbar: this.toolbar.length > 0 ? this.toolbar : toolbar,
         menubar: this.menubar,
         plugins: plugins,

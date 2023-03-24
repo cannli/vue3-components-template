@@ -1,0 +1,31 @@
+.panel-body{
+    background: #333333;
+}
+
+textarea::-webkit-input-placeholder{
+    color: #1890ff !important;
+}
+textarea:-ms-input-placeholder{
+    color: #1890ff !important;
+}
+textarea:-moz-placeholder{
+    color: #1890ff !important;
+}
+textarea::-moz-placeholder{
+    color: #1890ff !important;
+}
+.rich{
+    background: #1d84ef;
+}
+
+/*焦点时内容为空*/
+.rich:focus:before {
+    content: none !important;
+}
+
+.mce-content-body .index-desc {
+    color: rgba(21, 25, 44, 1);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "PingFang SC";
+}

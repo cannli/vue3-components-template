@@ -62,10 +62,10 @@ export default {
     }
   },
   methods: {
-    checkPass(){
+    checkPass() {
       alert('测试按钮事件');
     },
-    getData(){
+    getData() {
       alert('分页事件');
     },
   }
