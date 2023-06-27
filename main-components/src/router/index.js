@@ -89,6 +89,18 @@ export const constantRoutes = [
       },
     ],
   },
+  {
+    path: "/gridTable",
+    component: Layout,
+    children: [
+      {
+        path: "index",
+        component: () => import("@/views/gridTable/index"),
+        name: "gridTable",
+        meta: { title: "gridTable", icon: "icon", noCache: true },
+      },
+    ],
+  },
 ];
 
 const router = new VueRouter({
